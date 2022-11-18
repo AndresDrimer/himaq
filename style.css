@@ -276,7 +276,7 @@ nav div:nth-child(3) {
   width: 150px;
   height: 60px;
   line-height: 1px;
-  bottom: 260px;
+  bottom: 220px;
   right: 0px;
   color:var(--negro);
   display: flex;
@@ -299,10 +299,12 @@ nav div:nth-child(3) {
   .text-box-mail h5{
     font-size: 10px;
     letter-spacing: 0.5;
-   
-    
   }
-
+}
+@media (max-width: 400px) {
+  .text-box-mail h5{
+    font-size: 8px;
+  }
 }
 .rectangle-fixed div p,  .text-box-mail p{
   font-size: 10px;
