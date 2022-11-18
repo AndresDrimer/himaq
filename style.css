@@ -54,6 +54,8 @@ nav div:nth-child(3) {
   justify-content: space-between;
   height: 6rem;
   padding-top: 1em;
+  z-index: 3;
+ 
 }
 
 .menu {
@@ -154,6 +156,7 @@ nav div:nth-child(3) {
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    
   }
   .menu > li {
     display: flex;
@@ -179,6 +182,7 @@ nav div:nth-child(3) {
   background-repeat: no-repeat;
   margin-top: 1rem;
   position: relative;
+  z-index: 0;
 }
 
 .flex-3 {
@@ -250,8 +254,9 @@ nav div:nth-child(3) {
   left: 33%;
   background-color: white;
   border-radius: 5% 5% 0 0;
-  width: calc(102% / 3);
+  width: calc(100% / 3);
   height: 3.5rem;
+  padding: 0 0.2rem; 
  }
  .mail-us a{
   all:unset;
@@ -292,13 +297,12 @@ nav div:nth-child(3) {
 }
 @media (max-width: 568px) {
   .text-box-mail h5{
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.5;
-    line-height: 0.8rem;
+   
+    
   }
-  .mail-us{
-    height:6rem;
-  }
+
 }
 .rectangle-fixed div p,  .text-box-mail p{
   font-size: 10px;
@@ -314,7 +318,7 @@ nav div:nth-child(3) {
   text-align: center;
   font-size: 25px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 3;
+  z-index: 4;
   transition: all 300ms ease;
   line-height: 35px;
 }
