@@ -183,21 +183,23 @@ nav div:nth-child(3) {
 }
 .central-img {
   background-image: url("./assets/fondo_circulo.jpg");
-  z-index: 1; 
+  z-index: 1;
   opacity: 0%;
-  animation: makeAppear 6s cubic-bezier(0.23, 1, 0.32, 1);
-  animation-fill-mode: forwards;  
+  animation: makeAppear 3s ease-in;
+  animation-fill-mode: forwards;
 }
-@keyframes makeAppear{
-  0%{opacity:0%;}
-  100%{opacity:100%;}
+@keyframes makeAppear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .central-img-starting {
   background-image: url("./assets/fondo_logo.jpg");
-  z-index: 0; 
-  
-  
+  z-index: 0;
 }
 
 .flex-3 {
